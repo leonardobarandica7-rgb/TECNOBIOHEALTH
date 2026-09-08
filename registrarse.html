@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+    
+<head>        
+    <meta charset="utf-8">        
+    <title>Registrarse</title>   
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Videojuegos & Desarrollo">
+    <meta name="description" content="Formulario de registro basado en HTML5 y CSS">
+    <meta name="keywords" content="registro, formulario de registro html">        
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <div id="contenedor">
+        
+        <div id="contenedorcentrado">
+            <div id="login">
+                <form id="registerform" action="php/registro.php" method="POST">
+                    <h2 class="mt-5 mb-4">Regístrate</h2>
+                    <!-- Campo de entrada para el nombre de usuario -->
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="nombre_user" placeholder="Nombre de usuario" required>
+                    </div>
+                    <!-- Campo de entrada para la contraseña -->
+                    <div class="form-group">
+                      <input type="password" class="form-control" name="contrasena_user" placeholder="Contraseña" required>
+                    </div>
+                    <!-- Campo de entrada para el correo -->
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="correo_user" placeholder="Correo" required>
+                    </div>
+                    <!-- Botón para enviar el formulario de registro -->
+                    <button type="submit" class="btn btn-primary" name="registro">Registrarse</button>
+                  </form>
+            </div>
+            <div id="derecho">
+                <div class="titulo">
+                    ¡ÚNETE A TECNOBIOHEALTH!
+                </div>
+                <hr>
+                <div class="pie-form">                        
+                    <a href="login.html">¿Ya tienes cuenta? Inicia sesión</a>
+                    <hr>
+                    <a href="#">« Volver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
